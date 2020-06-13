@@ -1,13 +1,13 @@
-package com.github.kfcfans.oms.client;
+package com.github.kfcfans.powerjob.client;
 
-import com.github.kfcfans.oms.common.InstanceStatus;
-import com.github.kfcfans.oms.common.OmsException;
-import com.github.kfcfans.oms.common.OpenAPIConstant;
-import com.github.kfcfans.oms.common.request.http.SaveJobInfoRequest;
-import com.github.kfcfans.oms.common.request.http.SaveWorkflowRequest;
-import com.github.kfcfans.oms.common.response.*;
-import com.github.kfcfans.oms.common.utils.HttpUtils;
-import com.github.kfcfans.oms.common.utils.JsonUtils;
+import com.github.kfcfans.powerjob.common.InstanceStatus;
+import com.github.kfcfans.powerjob.common.OmsException;
+import com.github.kfcfans.powerjob.common.OpenAPIConstant;
+import com.github.kfcfans.powerjob.common.request.http.SaveJobInfoRequest;
+import com.github.kfcfans.powerjob.common.request.http.SaveWorkflowRequest;
+import com.github.kfcfans.powerjob.common.response.*;
+import com.github.kfcfans.powerjob.common.utils.HttpUtils;
+import com.github.kfcfans.powerjob.common.utils.JsonUtils;
 import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.FormBody;

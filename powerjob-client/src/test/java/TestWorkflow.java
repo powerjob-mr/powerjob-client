@@ -1,7 +1,7 @@
-import com.github.kfcfans.oms.client.OhMyClient;
-import com.github.kfcfans.oms.common.TimeExpressionType;
-import com.github.kfcfans.oms.common.model.PEWorkflowDAG;
-import com.github.kfcfans.oms.common.request.http.SaveWorkflowRequest;
+import com.github.kfcfans.powerjob.client.OhMyClient;
+import com.github.kfcfans.powerjob.common.TimeExpressionType;
+import com.github.kfcfans.powerjob.common.model.PEWorkflowDAG;
+import com.github.kfcfans.powerjob.common.request.http.SaveWorkflowRequest;
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
