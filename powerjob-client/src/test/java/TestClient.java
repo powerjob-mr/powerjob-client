@@ -1,11 +1,11 @@
-import com.github.kfcfans.oms.common.ExecuteType;
-import com.github.kfcfans.oms.common.ProcessorType;
-import com.github.kfcfans.oms.common.TimeExpressionType;
-import com.github.kfcfans.oms.common.request.http.SaveJobInfoRequest;
-import com.github.kfcfans.oms.common.response.JobInfoDTO;
-import com.github.kfcfans.oms.common.response.ResultDTO;
-import com.github.kfcfans.oms.client.OhMyClient;
-import com.github.kfcfans.oms.common.utils.JsonUtils;
+import com.github.kfcfans.powerjob.common.ExecuteType;
+import com.github.kfcfans.powerjob.common.ProcessorType;
+import com.github.kfcfans.powerjob.common.TimeExpressionType;
+import com.github.kfcfans.powerjob.common.request.http.SaveJobInfoRequest;
+import com.github.kfcfans.powerjob.common.response.JobInfoDTO;
+import com.github.kfcfans.powerjob.common.response.ResultDTO;
+import com.github.kfcfans.powerjob.client.OhMyClient;
+import com.github.kfcfans.powerjob.common.utils.JsonUtils;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -49,7 +49,7 @@ public class TestClient {
 
     @Test
     public void testFetchJob() throws Exception {
-        ResultDTO<JobInfoDTO> fetchJob = ohMyClient.fetchJob(7L);
+        ResultDTO<JobInfoDTO> fetchJob = ohMyClient.fetchJob(1L);
         System.out.println(JsonUtils.toJSONStringUnsafe(fetchJob));
     }
 
