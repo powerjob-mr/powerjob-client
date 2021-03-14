@@ -1,11 +1,11 @@
-package com.github.kfcfans.powerjob.client.test;
+package tech.powerjob.client.test;
 
 import com.alibaba.fastjson.JSON;
-import com.github.kfcfans.powerjob.common.request.query.JobInfoQuery;
-import com.github.kfcfans.powerjob.common.enums.ExecuteType;
-import com.github.kfcfans.powerjob.common.enums.ProcessorType;
-import com.github.kfcfans.powerjob.common.response.JobInfoDTO;
-import com.github.kfcfans.powerjob.common.response.ResultDTO;
+import tech.powerjob.common.request.query.JobInfoQuery;
+import tech.powerjob.common.enums.ExecuteType;
+import tech.powerjob.common.enums.ProcessorType;
+import tech.powerjob.common.response.JobInfoDTO;
+import tech.powerjob.common.response.ResultDTO;
 import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.time.DateUtils;

@@ -1,6 +1,6 @@
-package com.github.kfcfans.powerjob.client.test;
+package tech.powerjob.client.test;
 
-import com.github.kfcfans.powerjob.client.OhMyClient;
+import tech.powerjob.client.OhMyClient;
 import org.junit.jupiter.api.BeforeAll;
 
 /**

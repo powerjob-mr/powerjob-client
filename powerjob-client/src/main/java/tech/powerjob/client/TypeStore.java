@@ -1,7 +1,7 @@
-package com.github.kfcfans.powerjob.client;
+package tech.powerjob.client;
 
 import com.alibaba.fastjson.TypeReference;
-import com.github.kfcfans.powerjob.common.response.*;
+import tech.powerjob.common.response.*;
 
 import java.util.List;
 

@@ -1,14 +1,14 @@
-package com.github.kfcfans.powerjob.client.test;
+package tech.powerjob.client.test;
 
 import com.alibaba.fastjson.JSONObject;
-import com.github.kfcfans.powerjob.client.OhMyClient;
-import com.github.kfcfans.powerjob.common.enums.ExecuteType;
-import com.github.kfcfans.powerjob.common.enums.ProcessorType;
-import com.github.kfcfans.powerjob.common.enums.TimeExpressionType;
-import com.github.kfcfans.powerjob.common.request.http.SaveJobInfoRequest;
-import com.github.kfcfans.powerjob.common.response.InstanceInfoDTO;
-import com.github.kfcfans.powerjob.common.response.JobInfoDTO;
-import com.github.kfcfans.powerjob.common.response.ResultDTO;
+import tech.powerjob.client.OhMyClient;
+import tech.powerjob.common.enums.ExecuteType;
+import tech.powerjob.common.enums.ProcessorType;
+import tech.powerjob.common.enums.TimeExpressionType;
+import tech.powerjob.common.request.http.SaveJobInfoRequest;
+import tech.powerjob.common.response.InstanceInfoDTO;
+import tech.powerjob.common.response.JobInfoDTO;
+import tech.powerjob.common.response.ResultDTO;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

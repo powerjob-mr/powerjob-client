@@ -1,16 +1,18 @@
-package com.github.kfcfans.powerjob.client;
+package tech.powerjob.client;
 
 import com.alibaba.fastjson.JSON;
-import com.github.kfcfans.powerjob.common.enums.InstanceStatus;
-import com.github.kfcfans.powerjob.common.OmsConstant;
-import com.github.kfcfans.powerjob.common.OpenAPIConstant;
-import com.github.kfcfans.powerjob.common.PowerJobException;
-import com.github.kfcfans.powerjob.common.request.http.*;
-import com.github.kfcfans.powerjob.common.request.query.JobInfoQuery;
-import com.github.kfcfans.powerjob.common.response.*;
-import com.github.kfcfans.powerjob.common.utils.CommonUtils;
-import com.github.kfcfans.powerjob.common.utils.HttpUtils;
-import com.github.kfcfans.powerjob.common.utils.JsonUtils;
+import tech.powerjob.common.enums.InstanceStatus;
+import tech.powerjob.common.OmsConstant;
+import tech.powerjob.common.OpenAPIConstant;
+import tech.powerjob.common.PowerJobException;
+import tech.powerjob.common.request.http.SaveJobInfoRequest;
+import tech.powerjob.common.request.http.SaveWorkflowNodeRequest;
+import tech.powerjob.common.request.http.SaveWorkflowRequest;
+import tech.powerjob.common.request.query.JobInfoQuery;
+import tech.powerjob.common.response.*;
+import tech.powerjob.common.utils.CommonUtils;
+import tech.powerjob.common.utils.HttpUtils;
+import tech.powerjob.common.utils.JsonUtils;
 import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.FormBody;
@@ -22,7 +24,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 
-import static com.github.kfcfans.powerjob.client.TypeStore.*;
+import static tech.powerjob.client.TypeStore.*;
 
 /**
  * OhMyClient, the client for OpenAPI.
