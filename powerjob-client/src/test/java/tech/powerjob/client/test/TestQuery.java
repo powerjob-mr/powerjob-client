@@ -1,12 +1,11 @@
-package com.github.kfcfans.powerjob.client.test;
+package tech.powerjob.client.test;
 
 import com.alibaba.fastjson.JSON;
-import com.github.kfcfans.powerjob.common.request.query.JobInfoQuery;
-import com.github.kfcfans.powerjob.common.ExecuteType;
-import com.github.kfcfans.powerjob.common.ProcessorType;
-import com.github.kfcfans.powerjob.common.TimeExpressionType;
-import com.github.kfcfans.powerjob.common.response.JobInfoDTO;
-import com.github.kfcfans.powerjob.common.response.ResultDTO;
+import tech.powerjob.common.request.query.JobInfoQuery;
+import tech.powerjob.common.enums.ExecuteType;
+import tech.powerjob.common.enums.ProcessorType;
+import tech.powerjob.common.response.JobInfoDTO;
+import tech.powerjob.common.response.ResultDTO;
 import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.time.DateUtils;
@@ -26,7 +25,7 @@ class TestQuery extends ClientInitializer {
 
     @Test
     void testFetchAllJob() {
-        ResultDTO<List<JobInfoDTO>> allJobRes = ohMyClient.fetchAllJob();
+        ResultDTO<List<JobInfoDTO>> allJobRes = powerJobClient.fetchAllJob();
         System.out.println(JSON.toJSONString(allJobRes));
     }
 
@@ -39,10 +38,10 @@ class TestQuery extends ClientInitializer {
                 .setGmtModifiedGt(DateUtils.addYears(new Date(), -10))
                 .setGmtCreateLt(DateUtils.addDays(new Date(), 10))
                 .setExecuteTypeIn(Lists.newArrayList(ExecuteType.STANDALONE.getV(), ExecuteType.BROADCAST.getV(), ExecuteType.MAP_REDUCE.getV()))
-                .setProcessorTypeIn(Lists.newArrayList(ProcessorType.EMBEDDED_JAVA.getV(), ProcessorType.SHELL.getV(), ProcessorType.JAVA_CONTAINER.getV()))
-                .setProcessorInfoLike("com.github.kfcfans");
+                .setProcessorTypeIn(Lists.newArrayList(ProcessorType.BUILT_IN.getV(), ProcessorType.SHELL.getV(), ProcessorType.EXTERNAL.getV()))
+                .setProcessorInfoLike("tech.powerjob");
 
-        ResultDTO<List<JobInfoDTO>> jobQueryResult = ohMyClient.queryJob(jobInfoQuery);
+        ResultDTO<List<JobInfoDTO>> jobQueryResult = powerJobClient.queryJob(jobInfoQuery);
         System.out.println(JSON.toJSONString(jobQueryResult));
         System.out.println(jobQueryResult.getData().size());
     }
