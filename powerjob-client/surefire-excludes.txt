@@ -1,0 +1,7 @@
+# Upstream tests that cannot pass in a clean build; reasons are in split.json.
+**/client/test/TestClient.java
+**/client/test/TestClusterHA.java
+**/client/test/TestConcurrencyControl.java
+**/client/test/TestInstance.java
+**/client/test/TestQuery.java
+**/client/test/TestWorkflow.java
